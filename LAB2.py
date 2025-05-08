@@ -13,11 +13,11 @@ def calculate_bmi(height, weight):
  print(bmi)
  if bmi<18.5:
   classification = -1
- elif bmi>=18.5 or bmi<=25:
+ elif bmi>=18.5 and bmi<=25:
   classification = 0
  elif bmi>25:
   classification = 1
-  return bmi, classification 
+  return classification 
 
 def display_main_menu():
  print("Enter some numbers seperated by commas (e.g. 5, 67, 32)")
