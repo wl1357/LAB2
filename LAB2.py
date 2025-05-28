@@ -5,7 +5,7 @@ def main():
   calc_average(F)
   min_max_temp = find_min_max(F)
   print("Min & Max Temperature: ", min_max_temp[0], min_max_temp[1])
-  print("median temp",calc_medium_temp())
+  print("median temp",calc_medium_temp(F))
   
 def calculate_bmi(height, weight):
  print("Height = " + str(height))
