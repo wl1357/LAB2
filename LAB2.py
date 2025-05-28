@@ -5,7 +5,8 @@ def main():
   calc_average(F)
   min_max_temp = find_min_max(F)
   print("Min & Max Temperature: ", min_max_temp[0], min_max_temp[1])
-  pass
+  print("median temp",calc_medium_temp())
+  
 def calculate_bmi(height, weight):
  print("Height = " + str(height))
  print("Weight = " + str(weight))
@@ -41,6 +42,14 @@ def sort_temperature(F):
  F.sort()
  G=F[:]
  return G
+def calc_medium_temp(F):
+ B=sorted(F)
+ n=len(B)
+ mid=n//2
+ if n%2==0:
+  return round(((B[mid-1]+B[mid])/2),2)
+ else:
+  return B[mid]
 
 if __name__ == "__main__":
     main()
